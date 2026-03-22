@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dolce - Authentic, handcrafted gelato, Italian ice, and milkshakes. Family-owned and operated in Sandy Hook.">
+    <meta property="og:title" content="Dolce Gelato - Enjoy Every Scoop">
+    <meta property="og:description" content="Premium artisanal gelato and Italian treats from a family-owned shop.">
+    <meta property="og:type" content="website">
+
+    <title>Dolce Gelato | Authentic Handcrafted Treats</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#home" class="nav__link">Home</a>
+            <a href="sweets.html" class="nav__link">Menu</a>
+
+            <a href="#home" class="nav__logo">
+                <img src="/js/Dolce_Logo2.avif" alt="Dolce Gelato" class="nav__logo-img">
+            </a>
+
+            <a href="about.html" class="nav__link">About Us</a>
+            <a href="location.html" class="nav__link">Location</a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Section 1: Hero Banner Carousel -->
+        <section class="hero section" id="home">
+            <div class="hero__carousel">
+                <!-- Slide 1 -->
+                <div class="hero__slide active">
+                    <div class="hero__banner">
+                        <img src="/js/Dolce_Banner.jpg" alt="Dolce - Enjoy Every Scoop!" class="hero__banner-img">
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero__slide">
+                    <div class="hero__banner">
+                        <img src="/js/Dolce_Banner2.jpg" alt="Dolce - Premium Gelato Experience" class="hero__banner-img">
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="hero__arrow hero__arrow--left" id="prevSlide" aria-label="Previous slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="hero__arrow hero__arrow--right" id="nextSlide" aria-label="Next slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Slide Indicators -->
+                <div class="hero__indicators">
+                    <button class="hero__dot active" aria-label="Go to slide 1"></button>
+                    <button class="hero__dot" aria-label="Go to slide 2"></button>
+                </div>
+            </div>
+
+            <div class="hero__scroll">
+                <a href="#products" class="hero__scroll-link">
+                    <span>Scroll Down</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="6">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 2: Products -->
+        <section class="products section" id="products">
+            <div class="container">
+                <div class="products__grid">
+                    <div class="products__text fade-in-left">
+                        <h2 class="section__title">Authentic, Creamy Flavor</h2>
+                        <p class="products__description">
+                            At Dolce, we believe in the art of authentic gelato making. Each scoop is handcrafted
+                            with premium ingredients, bringing you the perfect balance of creamy texture and rich flavor.
+                        </p>
+                        <div class="products__list">
+                            <div class="products__item">
+                                <div>
+                                    <h3 class="products__item-title">Premium Gelato</h3>
+                                    <p class="products__item-desc">Small-batch, artisanal flavors crafted daily</p>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div>
+                                    <h3 class="products__item-title">Italian Ice</h3>
+                                    <p class="products__item-desc">Refreshing, authentic frozen desserts</p>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div>
+                                    <h3 class="products__item-title">Milkshakes</h3>
+                                    <p class="products__item-desc">Thick, creamy, and utterly indulgent</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="sweets.html" class="btn btn--primary">Explore Our Menu</a>
+                    </div>
+
+                    <div class="products__image fade-in-right">
+                        <div class="products__image-wrapper">
+                            <img src="/js/gelato_shovel.jpg"
+                                 alt="Gelato with scoop"
+                                 class="products__img">
+                            <div class="products__image-accent products__image-accent--1"></div>
+                            <div class="products__image-accent products__image-accent--2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Reviews -->
+        <section class="reviews section" id="reviews">
+            <div class="container">
+                <h2 class="section__title section__title--center fade-in">What Our Customers Say</h2>
+                <div class="reviews__grid">
+                    <article class="review__card fade-in-up" style="animation-delay: 0.1s">
+                        <div class="review__stars">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <blockquote class="review__text">
+                            "The best gelato I've ever tasted! The flavors are so authentic and creamy.
+                            You can really taste the quality of the ingredients. Highly recommend!"
+                        </blockquote>
+                        <cite class="review__author">— Sarah M.</cite>
+                    </article>
+
+                    <article class="review__card fade-in-up" style="animation-delay: 0.2s">
+                        <div class="review__stars">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <blockquote class="review__text">
+                            "A family-owned gem! The owners are so friendly and passionate about what they do.
+                            The Italian ice is absolutely perfect on a hot summer day."
+                        </blockquote>
+                        <cite class="review__author">— Michael R.</cite>
+                    </article>
+
+                    <article class="review__card fade-in-up" style="animation-delay: 0.3s">
+                        <div class="review__stars">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <blockquote class="review__text">
+                            "Their milkshakes are to die for! Thick, creamy, and made with real gelato.
+                            Dolce has become our go-to spot for treating ourselves."
+                        </blockquote>
+                        <cite class="review__author">— Emily T.</cite>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: About -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__text fade-in-left">
+                        <h2 class="section__title">Get to Know Us</h2>
+                        <p class="about__description">
+                            Dolce is a family-owned and operated gelato shop nestled in the heart of Sandy Hook.
+                            What started as a passion project has blossomed into a beloved local destination where
+                            tradition meets innovation.
+                        </p>
+                        <p class="about__description">
+                            Our commitment to quality means we source the finest ingredients and craft each batch
+                            with care. We believe that great gelato brings people together, creating sweet memories
+                            that last a lifetime.
+                        </p>
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <span class="about__feature-number">15+</span>
+                                <span class="about__feature-label">Years of Excellence</span>
+                            </div>
+                            <div class="about__feature">
+                                <span class="about__feature-number">50+</span>
+                                <span class="about__feature-label">Unique Flavors</span>
+                            </div>
+                            <div class="about__feature">
+                                <span class="about__feature-number">100%</span>
+                                <span class="about__feature-label">Family Recipes</span>
+                            </div>
+                        </div>
+                        <a href="#social" class="btn btn--secondary">Our Story</a>
+                    </div>
+
+                    <div class="about__image fade-in-right">
+                        <div class="about__image-wrapper">
+                            <div class="about__frame">
+                                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=700&fit=crop"
+                                     alt="Dolce gelato shop owners"
+                                     class="about__img">
+                                <div class="about__frame-accent"></div>
+                            </div>
+                            <div class="about__label">Meet the Owners</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Social Feed -->
+        <section class="social section" id="social">
+            <div class="container">
+                <div class="social__header fade-in">
+                    <h2 class="social__title">@dolcesandyhook</h2>
+                    <p class="social__subtitle">Follow us for daily scoops and sweet moments</p>
+                </div>
+
+                <!-- Instagram Feed Container - Dynamically populated by instagram-feed.js -->
+                <div class="social__grid" id="instagram-feed-container">
+                    <!-- Posts will be loaded here by JavaScript -->
+                    <!-- Fallback content if JavaScript is disabled -->
+                    <noscript>
+                        <a href="https://instagram.com/dolcesandyhook"
+                           class="social__post"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=400&h=400&fit=crop"
+                                 alt="Instagram post 1"
+                                 class="social__img">
+                            <div class="social__overlay">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/dolcesandyhook"
+                           class="social__post"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=400&fit=crop"
+                                 alt="Instagram post 2"
+                                 class="social__img">
+                            <div class="social__overlay">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/dolcesandyhook"
+                           class="social__post"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?w=400&h=400&fit=crop"
+                                 alt="Instagram post 3"
+                                 class="social__img">
+                            <div class="social__overlay">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                        </a>
+                    </noscript>
+                </div>
+
+                <div class="social__cta fade-in-up">
+                    <a href="https://instagram.com/dolcesandyhook"
+                       class="btn btn--primary btn--large"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Follow Us on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Experience Dolce?</h2>
+                    <p class="cta__description">
+                        Visit us today and taste the difference that passion, quality, and tradition make.
+                        We can't wait to serve you!
+                    </p>
+                    <a href="location.html" class="btn btn--primary btn--large">Visit Us Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section footer__section--logo">
+                    <img src="/js/Dolce_Logo.jpg" alt="Dolce Gelato" class="footer__logo">
+                    <p class="footer__description">
+                        Handcrafted gelato, made with love in Sandy Hook, CT.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Hours</h4>
+                    <ul class="footer__list">
+                        <li>Monday: Closed</li>
+                        <li>Tuesday: 2pm - 9pm</li>
+                        <li>Wednesday: 2pm - 9pm</li>
+                        <li>Thursday: 2pm - 9pm</li>
+                        <li>Friday: 12pm - 9pm</li>
+                        <li>Saturday: 12pm - 9pm</li>
+                        <li>Sunday: 1pm - 8pm</li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Location</h4>
+                    <address class="footer__address">
+                        117 Church Hill Rd<br>
+                        Sandy Hook, CT 06482<br>
+                        <a href="tel:+12033049198">(203) 304-9198</a>
+                    </address>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Connect</h4>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/dolcesandyhook" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/dolcect" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dolce Gelato. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Instagram Feed Integration -->
+    <script src="instagram-config.js"></script>
+    <script src="instagram-feed.js"></script>
+</body>
+</html>

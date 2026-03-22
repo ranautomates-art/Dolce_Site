@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dolce Sweets Menu - Italian Ice, Gelato, and Milkshakes">
+    <title>Dolce Sweets Menu | Authentic Handcrafted Treats</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sweets-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="sweets.html" class="nav__link">Menu</a>
+
+            <a href="index.html" class="nav__logo">
+                <img src="/js/Dolce_Logo2.avif" alt="Dolce Gelato" class="nav__logo-img">
+            </a>
+
+            <a href="about.html" class="nav__link">About Us</a>
+            <a href="location.html" class="nav__link">Location</a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sticky Sub-Navigation -->
+    <nav class="menu-nav" id="menu-nav">
+        <div class="container">
+            <ul class="menu-nav__list">
+                <li class="menu-nav__item">
+                    <a href="#featured" class="menu-nav__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        Featured
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#italian-ice" class="menu-nav__link">Italian Ice</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#gelato" class="menu-nav__link">Gelato</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#milkshakes" class="menu-nav__link">Milkshakes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Featured Banner Carousel -->
+        <section class="featured-banner" id="featured">
+            <div class="banner-carousel">
+                <!-- Slide 1: Stracciatella Milkshake -->
+                <div class="banner-slide active">
+                    <div class="banner-slide__content">
+                        <div class="banner-slide__text">
+                            <span class="banner-badge">Fan Favorite</span>
+                            <h2 class="banner-slide__title">Stracciatella Milkshake</h2>
+                            <p class="banner-slide__description">Indulge in pure vanilla heaven loaded with crispy dark chocolate chips. Thick, creamy, and absolutely irresistible!</p>
+                            <div class="banner-slide__tags">
+                                <span class="banner-tag">Chocolate Chips</span>
+                                <span class="banner-tag">Extra Creamy</span>
+                                <span class="banner-tag">Customer Pick</span>
+                            </div>
+                        </div>
+                        <div class="banner-slide__image">
+                            <div class="banner-image-frame">
+                                <img src="/js/Stracciatella_Milkshake.jpg" alt="Creamy vanilla milkshake studded with chocolate chip pieces and topped with whipped cream" class="banner-slide__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Salted Caramel Gelato -->
+                <div class="banner-slide">
+                    <div class="banner-slide__content">
+                        <div class="banner-slide__text">
+                            <span class="banner-badge premium">Premium</span>
+                            <h2 class="banner-slide__title">Salted Caramel Gelato</h2>
+                            <p class="banner-slide__description">Luxurious golden caramel gelato with ribbons of rich caramel sauce and a perfect balance of sweet and salty notes. An irresistible indulgence.</p>
+                            <div class="banner-slide__tags">
+                                <span class="banner-tag">Sweet & Salty</span>
+                                <span class="banner-tag">Caramel Swirl</span>
+                                <span class="banner-tag">Customer Favorite</span>
+                            </div>
+                        </div>
+                        <div class="banner-slide__image">
+                            <div class="banner-image-frame">
+                                <img src="/js/SaltedCaramel_Gelato.jpg" alt="Golden amber salted caramel gelato with ribbons of rich caramel sauce throughout" class="banner-slide__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Bacio Milkshake -->
+                <div class="banner-slide">
+                    <div class="banner-slide__content">
+                        <div class="banner-slide__text">
+                            <span class="banner-badge premium">Premium</span>
+                            <h2 class="banner-slide__title">Bacio Milkshake</h2>
+                            <p class="banner-slide__description">Experience Italian indulgence with this ultra-thick hazelnut chocolate shake. Crowned with whipped cream and chocolate shavings for the ultimate treat.</p>
+                            <div class="banner-slide__tags">
+                                <span class="banner-tag">Hazelnut</span>
+                                <span class="banner-tag">Dark Chocolate</span>
+                                <span class="banner-tag">Italian Classic</span>
+                            </div>
+                        </div>
+                        <div class="banner-slide__image">
+                            <div class="banner-image-frame">
+                                <img src="/js/Bacio_Milkshake.jpg" alt="Decadent bacio milkshake with hazelnut chocolate swirls, topped with whipped cream and chocolate shavings" class="banner-slide__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="banner-arrow banner-arrow--left" id="bannerPrev" aria-label="Previous slide">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="banner-arrow banner-arrow--right" id="bannerNext" aria-label="Next slide">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <!-- Carousel Indicators -->
+            <div class="banner-indicators">
+                <button class="banner-dot active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="banner-dot" data-slide="1" aria-label="Slide 2"></button>
+                <button class="banner-dot" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+        </section>
+
+        <!-- Italian Ice Section -->
+        <section class="sweets-section section" id="italian-ice">
+            <div class="container">
+                <div class="sweets-section__header fade-in">
+                    <h2 class="sweets-section__title">Italian Ice</h2>
+                    <p class="sweets-section__description">Refreshing, authentic frozen desserts with a light, icy texture</p>
+                </div>
+
+                <div class="sweets-grid">
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.1s">
+                        <div class="sweets-card__image">
+                            <img src="/js/BlueRaspberry_ItalianIce.jpg" alt="Vibrant electric blue raspberry Italian ice with crystalline granulated texture served in a clear cup" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Blue Raspberry
+                                
+                            </h3>
+                            <p class="sweets-card__description">Bold electric blue with sweet-tart raspberry flavor and refreshingly icy granulated texture</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.15s">
+                        <div class="sweets-card__image">
+                            <img src="/js/BubbleGum_ItalianIce.jpg" alt="Soft pink bubble gum Italian ice with smooth matte frozen texture in a decorative cup" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Bubble Gum
+                                
+                            </h3>
+                            <p class="sweets-card__description">Nostalgic soft pink ice with classic bubble gum sweetness and velvety smooth texture</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.2s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Cherry_ItalianIce.jpg" alt="Deep ruby red cherry Italian ice with rich glossy finish served fresh in a traditional cup" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Cherry
+                                
+                            </h3>
+                            <p class="sweets-card__description">Luscious deep red Italian ice bursting with rich, authentic sweet cherry flavor</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.25s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Lemon_ItalianIce.jpg" alt="Bright sunny yellow lemon Italian ice with zesty citrus appeal and light fluffy texture" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Lemon
+                                
+                            </h3>
+                            <p class="sweets-card__description">Bright citrus burst with perfect balance of tangy lemon and refreshing sweetness</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.3s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Mango_ItalianIce.jpg" alt="Tropical orange-yellow mango Italian ice with silky smooth icy texture in an elegant serving" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Mango
+                                
+                            </h3>
+                            <p class="sweets-card__description">Exotic tropical orange-gold ice with natural mango sweetness and silky texture</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.35s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Rainbow_ItalianIce.jpg" alt="Colorful rainbow Italian ice with vibrant layered swirls of multiple fruit flavors" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Rainbow
+                                
+                            </h3>
+                            <p class="sweets-card__description">Festive multi-colored swirls combining cherry, lemon, and blue raspberry layers</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.4s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Watermelon_ItalianIce.jpg" alt="Fresh pink watermelon Italian ice with juicy summer fruit essence and crystalline texture" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Watermelon
+
+                            </h3>
+                            <p class="sweets-card__description">Refreshing pink ice capturing the essence of sweet summer watermelon</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--italian-ice fade-in-up" style="animation-delay: 0.45s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Tangerine_ItalianIce.jpg" alt="Bright orange tangerine Italian ice with vibrant citrus flavor and icy texture" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Tangerine
+
+                            </h3>
+                            <p class="sweets-card__description">Zesty citrus burst with sweet tangerine flavor and refreshingly icy texture</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gelato Section -->
+        <section class="sweets-section section" id="gelato">
+            <div class="container">
+                <div class="sweets-section__header fade-in">
+                    <h2 class="sweets-section__title">Gelato</h2>
+                    <p class="sweets-section__description">Premium Italian gelato, crafted with authentic recipes and finest ingredients</p>
+                </div>
+
+                <div class="sweets-grid">
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.1s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Bacio_Gelato.jpg" alt="Luxurious hazelnut-chocolate bacio gelato with dense creamy swirls in an artisan presentation" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Bacio
+                                
+                            </h3>
+                            <p class="sweets-card__description">Velvety hazelnut and dark chocolate swirl creating an indulgent Italian classic</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.15s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Chochlate_Gelato.jpg" alt="Rich decadent dark chocolate gelato with glossy finish and intense cocoa color" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Chocolate
+                                
+                            </h3>
+                            <p class="sweets-card__description">Intensely rich dark chocolate gelato made with premium cocoa for pure indulgence</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.2s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Coconut_Gelato.jpg" alt="Creamy white coconut gelato with tropical essence and silky smooth texture" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Coconut
+                                
+                            </h3>
+                            <p class="sweets-card__description">Smooth tropical coconut gelato with authentic flavor and dreamy creamy texture</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.25s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Mint_Stracciatella_Gelato.jpg" alt="Pale mint green gelato with fine dark chocolate shavings creating elegant stracciatella pattern" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Mint Stracciatella
+                                
+                            </h3>
+                            <p class="sweets-card__description">Cool mint gelato studded with delicate dark chocolate shavings for refreshing elegance</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.3s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Vanilla_Gelato.jpg" alt="Classic ivory vanilla gelato with visible Madagascar vanilla bean specks and silky texture" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Vanilla
+                                
+                            </h3>
+                            <p class="sweets-card__description">Pure Madagascar vanilla bean gelato with authentic flavor and creamy perfection</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.35s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Pistachio_Gelato.jpg" alt="Pale earthy green pistachio gelato topped with crushed roasted pistachio pieces" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Pistachio
+                                
+                            </h3>
+                            <p class="sweets-card__description">Authentic pale green gelato with real pistachios and delicate nutty sweetness</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.4s">
+                        <div class="sweets-card__image">
+                            <img src="/js/SaltedCaramel_Gelato.jpg" alt="Golden amber salted caramel gelato with ribbons of rich caramel sauce throughout" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Salted Caramel
+                                
+                            </h3>
+                            <p class="sweets-card__description">Luxurious caramel gelato with perfect balance of sweet and salty notes</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.45s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Stracciatella_Gelato.jpg" alt="Smooth milk-white stracciatella gelato with generous dark chocolate shavings distributed throughout" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Stracciatella
+                                
+                            </h3>
+                            <p class="sweets-card__description">Classic milk-white gelato generously studded with crisp dark chocolate shavings</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.5s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Strawberry_Gelato.jpg" alt="Vibrant pink strawberry gelato made with fresh ripe strawberries and natural fruit pieces" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Strawberry
+
+                            </h3>
+                            <p class="sweets-card__description">Fresh strawberry gelato bursting with natural fruit flavor and vibrant color</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.55s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Nocciutella_Gelato.jpg" alt="Rich hazelnut chocolate nocciutella gelato with creamy swirls and smooth texture" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Nocciutella
+
+                            </h3>
+                            <p class="sweets-card__description">Decadent hazelnut chocolate gelato with rich cocoa and roasted nut flavor</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.6s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Cappuccino_Gelato.jpg" alt="Smooth cappuccino gelato with espresso swirls and creamy coffee flavor" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Cappuccino
+
+                            </h3>
+                            <p class="sweets-card__description">Smooth espresso gelato with authentic Italian coffee flavor and creamy finish</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--gelato fade-in-up" style="animation-delay: 0.65s">
+                        <div class="sweets-card__image">
+                            <img src="/js/RedVelvet_Gelato.jpg" alt="Luxurious red velvet gelato with cocoa notes and cream cheese swirl" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Red Velvet
+
+                            </h3>
+                            <p class="sweets-card__description">Velvety red cocoa gelato with subtle cream cheese swirl for ultimate indulgence</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Milkshakes Section -->
+        <section class="sweets-section section" id="milkshakes">
+            <div class="container">
+                <div class="sweets-section__header fade-in">
+                    <h2 class="sweets-section__title">Milkshakes</h2>
+                    <p class="sweets-section__description">Thick, creamy, and utterly indulgent shakes topped with whipped cream</p>
+                </div>
+
+                <div class="sweets-grid">
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.1s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Bacio_Milkshake.jpg" alt="Decadent bacio milkshake with hazelnut chocolate swirls, topped with whipped cream and chocolate shavings" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Bacio
+                                
+                            </h3>
+                            <p class="sweets-card__description">Ultra-thick hazelnut chocolate shake crowned with whipped cream and chocolate</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.15s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Chochlate_Milkshake.jpg" alt="Classic rich chocolate milkshake with velvety texture topped with fresh whipped cream" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Chocolate
+                                
+                            </h3>
+                            <p class="sweets-card__description">Timeless chocolate indulgence blended thick and creamy to perfection</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.2s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Coconut_Milkshake.jpg" alt="Tropical coconut milkshake with creamy white color and garnished with toasted coconut flakes" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Coconut
+                                
+                            </h3>
+                            <p class="sweets-card__description">Transport yourself to paradise with this tropical coconut dream shake</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.25s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Mint_Milkshake.jpg" alt="Cool mint green milkshake with refreshing appearance topped with whipped cream and mint garnish" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Mint
+                                
+                            </h3>
+                            <p class="sweets-card__description">Refreshingly cool mint shake that's both invigorating and satisfying</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.3s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Pistachio_Milkshake.jpg" alt="Thick pale green pistachio milkshake with crushed pistachio rim and whipped cream topping" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Pistachio
+                                
+                            </h3>
+                            <p class="sweets-card__description">Luxurious pistachio shake with crushed nut rim for extra texture and flavor</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.35s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Stracciatella_Milkshake.jpg" alt="Creamy vanilla milkshake studded with chocolate chip pieces and topped with whipped cream" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Stracciatella
+                                
+                            </h3>
+                            <p class="sweets-card__description">Creamy vanilla shake loaded with crispy chocolate chips throughout</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.4s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Strawberry_Milkshake.jpg" alt="Pretty pink strawberry milkshake with fresh fruit flavor topped with whipped cream and strawberry" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Strawberry
+                                
+                            </h3>
+                            <p class="sweets-card__description">Sweet and fruity strawberry shake made with real fruit and fresh cream</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.45s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Vanilla_Milkshake.jpg" alt="Classic ivory vanilla milkshake with smooth creamy texture and whipped cream topping" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Vanilla
+
+                            </h3>
+                            <p class="sweets-card__description">Pure vanilla perfection in a thick, creamy shake that never goes out of style</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.5s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Nocciutella_Milkshake.jpg" alt="Rich nocciutella milkshake with hazelnut chocolate blend topped with whipped cream" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Nocciutella
+
+                            </h3>
+                            <p class="sweets-card__description">Indulgent hazelnut chocolate shake blended thick with chocolate swirls throughout</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.55s">
+                        <div class="sweets-card__image">
+                            <img src="/js/Cappuccino_Milkshake.jpg" alt="Coffee lover's cappuccino milkshake with espresso and creamy milk topped with foam" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Cappuccino
+
+                            </h3>
+                            <p class="sweets-card__description">Bold espresso shake with smooth coffee flavor perfect for caffeine lovers</p>
+                        </div>
+                    </article>
+
+                    <article class="sweets-card sweets-card--milkshake fade-in-up" style="animation-delay: 0.6s">
+                        <div class="sweets-card__image">
+                            <img src="/js/RedVelvet_Milkshake.jpg" alt="Velvety red velvet milkshake with cocoa and cream cheese notes topped with whipped cream" class="sweets-card__img">
+                        </div>
+                        <div class="sweets-card__content">
+                            <h3 class="sweets-card__title">
+                                Red Velvet
+
+                            </h3>
+                            <p class="sweets-card__description">Luxurious red velvet shake with hints of cocoa and cream cheese swirl</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Call to Action Section -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Ready to Experience Dolce?</h2>
+                <p class="cta__description">
+                    Visit us today and taste the difference that passion, quality, and tradition make.
+                    We can't wait to serve you!
+                </p>
+                <a href="location.html" class="btn btn--primary btn--large">Visit Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="location">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section footer__section--logo">
+                    <img src="/js/Dolce_Logo.jpg" alt="Dolce Ice Cream" class="footer__logo">
+                    <p class="footer__description">
+                        Handcrafted ice cream, made with love in Sandy Hook, CT.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Hours</h4>
+                    <ul class="footer__list">
+                        <li>Monday: Closed</li>
+                        <li>Tuesday: 2pm - 9pm</li>
+                        <li>Wednesday: 2pm - 9pm</li>
+                        <li>Thursday: 2pm - 9pm</li>
+                        <li>Friday: 12pm - 9pm</li>
+                        <li>Saturday: 12pm - 9pm</li>
+                        <li>Sunday: 1pm - 8pm</li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Location</h4>
+                    <address class="footer__address">
+                        117 Church Hill Rd<br>
+                        Sandy Hook, CT 06482<br>
+                        <a href="tel:+12033049198">(203) 304-9198</a>
+                    </address>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Connect</h4>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/dolcesandyhook" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/dolcect" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dolce Ice Cream. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="menu-script.js"></script>
+</body>
+</html>

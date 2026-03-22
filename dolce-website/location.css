@@ -1,0 +1,354 @@
+/* Location Section Styles for Dolce Ice Cream Shop */
+/* Uses color scheme from main website */
+
+/* Location Section */
+.location-section {
+    padding: 140px 20px 80px 20px; /* Top padding accounts for fixed header */
+    background: linear-gradient(135deg, #FDFBF7 0%, #FFE5E5 50%, #FFD4D4 100%);
+    min-height: 100vh;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2D2D2D;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    color: #6B6B6B;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Location Content Grid */
+.location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.map-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.map-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    display: block;
+}
+
+/* Get Directions Button - Using main website's red accent */
+.directions-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: #E25858;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.directions-btn:hover {
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    background: #C14545;
+}
+
+.directions-btn:active {
+    transform: translateX(-50%) translateY(0);
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Info Container */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Info Cards */
+.info-card {
+    background-color: #FFFFFF;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.info-card-wide {
+    grid-column: 1 / -1;
+}
+
+.info-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #FFE5E5 0%, #F1E9DB 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E25858;
+}
+
+.info-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.info-content {
+    flex: 1;
+}
+
+.info-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2D2D2D;
+    margin-bottom: 8px;
+}
+
+.info-text {
+    font-size: 1rem;
+    color: #6B6B6B;
+    line-height: 1.6;
+}
+
+.phone-link {
+    color: #E25858;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.phone-link:hover {
+    color: #C14545;
+}
+
+/* Hours List */
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hours-row:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+.time {
+    color: #6B6B6B;
+    font-weight: 400;
+}
+
+.time.closed {
+    color: #E25858;
+    font-style: italic;
+}
+
+/* Active nav link styling for location page */
+.nav__link.active {
+    color: #E25858;
+}
+
+.nav__link.active::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 968px) {
+    .location-section {
+        padding: 120px 20px 60px 20px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .map-image,
+    .map-iframe {
+        height: 350px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 640px) {
+    .location-section {
+        padding: 100px 16px 60px 16px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .map-image,
+    .map-iframe {
+        height: 280px;
+    }
+
+    .directions-btn {
+        padding: 12px 24px;
+        font-size: 0.9375rem;
+    }
+
+    .info-card {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .info-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .info-title {
+        font-size: 1.125rem;
+    }
+
+    .info-text {
+        font-size: 0.9375rem;
+    }
+
+    .hours-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .time {
+        font-size: 0.875rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-description {
+        font-size: 0.9375rem;
+    }
+
+    .map-image,
+    .map-iframe {
+        height: 240px;
+    }
+
+    .directions-btn {
+        font-size: 0.875rem;
+        padding: 10px 20px;
+        bottom: 16px;
+    }
+
+    .btn-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .location-section {
+        background: white;
+        padding: 20px;
+    }
+
+    .directions-btn {
+        display: none;
+    }
+
+    .info-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .header {
+        position: static;
+    }
+}

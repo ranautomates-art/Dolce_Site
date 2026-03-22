@@ -1,0 +1,247 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                    🍦 DOLCE ICE CREAM WEBSITE - SITE MAP 🍦                ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                          📍 NAVIGATION BAR (STICKY)                      │
+├─────────────────────────────────────────────────────────────────────────┤
+│   [Home]    [Sweets]         🍦 DOLCE 🍦       [About Us]  [Location]   │
+│                        (Hamburger Menu on Mobile)                        │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌═════════════════════════════════════════════════════════════════════════┐
+│                     SECTION 1: HERO CAROUSEL (#home)                     │
+│                     Full Height - 3 Auto-Rotating Slides                 │
+├═════════════════════════════════════════════════════════════════════════┤
+│                                                                           │
+│        [◄ Arrow]                                              [Arrow ►]  │
+│                                                                           │
+│                    🍓                      🫐                             │
+│                 Ice Cream              Ice Cream                          │
+│                   Cone                   Cone                             │
+│                  (Tilt Left)          (Tilt Right)                        │
+│                                                                           │
+│                      ╔═══════════════════════════╗                       │
+│                      ║  Enjoy Every Scoop!       ║                       │
+│                      ╚═══════════════════════════╝                       │
+│                                                                           │
+│                          • • • (Slide Dots)                               │
+│                         ↓ Scroll Down ↓                                  │
+└═════════════════════════════════════════════════════════════════════════┘
+
+┌═════════════════════════════════════════════════════════════════════════┐
+│                  SECTION 2: PRODUCTS (#products)                         │
+│                         Two-Column Layout                                │
+├═════════════════════════════════════════════════════════════════════════┤
+│                                                                           │
+│  ┌─────────────────────────────┐  ┌───────────────────────────────┐    │
+│  │ Authentic, Creamy Product   │  │                                │    │
+│  │ ───────────────────────────  │  │         ╔══════════╗          │    │
+│  │                              │  │         ║  Product  ║          │    │
+│  │ At Dolce, we believe in...   │  │         ║   Image   ║          │    │
+│  │                              │  │         ║  (Ice     ║          │    │
+│  │ ┌─────────────────────────┐  │  │         ║  Cream &  ║          │    │
+│  │ │ 🍦 Premium Ice Cream    │  │  │         ║  Shake)   ║          │    │
+│  │ │    Small-batch flavors  │  │  │         ╚══════════╝          │    │
+│  │ └─────────────────────────┘  │  │                                │    │
+│  │                              │  │                                │    │
+│  │ ┌─────────────────────────┐  │  │                                │    │
+│  │ │ 🍧 Italian Ice          │  │  │                                │    │
+│  │ │    Refreshing desserts  │  │  │                                │    │
+│  │ └─────────────────────────┘  │  │                                │    │
+│  │                              │  │                                │    │
+│  │ ┌─────────────────────────┐  │  │                                │    │
+│  │ │ 🥤 Milkshakes           │  │  │                                │    │
+│  │ │    Thick & creamy       │  │  │                                │    │
+│  │ └─────────────────────────┘  │  │                                │    │
+│  │                              │  │                                │    │
+│  │   [Explore Our Menu]         │  │                                │    │
+│  └─────────────────────────────┘  └───────────────────────────────┘    │
+└═════════════════════════════════════════════════════════════════════════┘
+
+┌═════════════════════════════════════════════════════════════════════════┐
+│                    SECTION 3: REVIEWS (#reviews)                         │
+│                       Three-Column Card Grid                             │
+├═════════════════════════════════════════════════════════════════════════┤
+│              What Our Customers Say                                      │
+│              ─────────────────────────                                   │
+│                                                                           │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐                  │
+│  │ ⭐⭐⭐⭐⭐    │  │ ⭐⭐⭐⭐⭐    │  │ ⭐⭐⭐⭐⭐    │                  │
+│  │              │  │              │  │              │                  │
+│  │ "The best    │  │ "A family-   │  │ "Their milk- │                  │
+│  │  ice cream   │  │  owned gem!  │  │  shakes are  │                  │
+│  │  I've ever   │  │  The owners  │  │  to die for! │                  │
+│  │  tasted!"    │  │  are so      │  │  Thick and   │                  │
+│  │              │  │  friendly!"  │  │  creamy!"    │                  │
+│  │              │  │              │  │              │                  │
+│  │ — Sarah M.   │  │ — Michael R. │  │ — Emily T.   │                  │
+│  └──────────────┘  └──────────────┘  └──────────────┘                  │
+│      (Hover to Lift Effect)                                              │
+└═════════════════════════════════════════════════════════════════════════┘
+
+┌═════════════════════════════════════════════════════════════════════════┐
+│                     SECTION 4: ABOUT (#about)                            │
+│                       Two-Column Layout                                  │
+├═════════════════════════════════════════════════════════════════════════┤
+│                                                                           │
+│  ┌────────────────────────────┐  ┌────────────────────────────────┐    │
+│  │  Get to Know Us            │  │                                 │    │
+│  │  ──────────────            │  │    ┌─────────────────────┐     │    │
+│  │                            │  │    │   ╔═══════════╗     │     │    │
+│  │  Dolce is a family-owned   │  │    │   ║  Owners   ║     │     │    │
+│  │  and operated ice cream    │  │    │   ║   Photo   ║     │     │    │
+│  │  shop nestled in the       │  │    │   ║  (Framed)  ║     │     │    │
+│  │  heart of Sandy Hook...    │  │    │   ╚═══════════╝     │     │    │
+│  │                            │  │    └─────────────────────┘     │    │
+│  │  ┌────────────────────┐    │  │                                 │    │
+│  │  │  15+    50+   100% │    │  │    "Meet the Owners"            │    │
+│  │  │ Years  Flavors  🏠 │    │  │                                 │    │
+│  │  └────────────────────┘    │  │                                 │    │
+│  │                            │  │                                 │    │
+│  │   [Our Story]              │  │                                 │    │
+│  └────────────────────────────┘  └────────────────────────────────┘    │
+└═════════════════════════════════════════════════════════════════════════┘
+
+┌═════════════════════════════════════════════════════════════════════════┐
+│                   SECTION 5: SOCIAL FEED (#social)                       │
+│                     Instagram Integration                                │
+├═════════════════════════════════════════════════════════════════════════┤
+│                                                                           │
+│                        @dolcesandyhook                                   │
+│                Follow us for daily scoops and sweet moments              │
+│                                                                           │
+│       ┌──────────┐      ┌──────────┐      ┌──────────┐                 │
+│       │ ╔══════╗ │      │ ╔══════╗ │      │ ╔══════╗ │                 │
+│       │ ║Insta║  │      │ ║Insta║  │      │ ║Insta║  │                 │
+│       │ ║Post║   │      │ ║Post║   │      │ ║Post║   │                 │
+│       │ ║  1 ║   │      │ ║  2 ║   │      │ ║  3 ║   │                 │
+│       │ ╚══════╝ │      │ ╚══════╝ │      │ ╚══════╝ │                 │
+│       └──────────┘      └──────────┘      └──────────┘                 │
+│          (400x400)         (400x400)         (400x400)                  │
+│        (Hover: Instagram Icon Overlay)                                   │
+│                                                                           │
+│                   [Follow Us on Instagram]                               │
+└═════════════════════════════════════════════════════════════════════════┘
+
+┌═════════════════════════════════════════════════════════════════════════┐
+│                        FOOTER (#location)                                │
+│                        Four-Column Grid                                  │
+├═════════════════════════════════════════════════════════════════════════┤
+│                                                                           │
+│  ┌─────────┐  ┌─────────┐  ┌─────────────┐  ┌──────────────┐          │
+│  │ Dolce   │  │ Hours   │  │  Location   │  │   Connect    │          │
+│  │ ───────  │  │ ───────  │  │  ──────────  │  │   ──────────  │          │
+│  │         │  │         │  │             │  │              │          │
+│  │ Handmade │  │ Mon-Thu │  │ 123 Beach   │  │  [Instagram] │          │
+│  │ ice cream │  │ 12-9pm  │  │ Street      │  │  [Facebook]  │          │
+│  │ made with │  │         │  │             │  │              │          │
+│  │ love in   │  │ Fri-Sat │  │ Sandy Hook  │  │              │          │
+│  │ Sandy Hook │  │ 11-10pm │  │ NJ 07732    │  │              │          │
+│  │          │  │         │  │             │  │              │          │
+│  │          │  │ Sunday  │  │ (732)       │  │              │          │
+│  │          │  │ 12-9pm  │  │ 555-1234    │  │              │          │
+│  └─────────┘  └─────────┘  └─────────────┘  └──────────────┘          │
+│                                                                           │
+│  ─────────────────────────────────────────────────────────────────────   │
+│              © 2024 Dolce Ice Cream. All rights reserved.                │
+└═════════════════════════════════════════════════════════════════════════┘
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                           RESPONSIVE BEHAVIOR                              ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  📱 MOBILE (< 640px)         💻 TABLET (640-1024px)     🖥️ DESKTOP (>1024px) ║
+║  ────────────────           ─────────────────────      ───────────────── ║
+║  • Single column            • 2-column grids           • Full 2-4 columns ║
+║  • Hamburger menu           • Adjusted spacing         • All features     ║
+║  • Stacked sections         • Medium images            • Large images     ║
+║  • 1-column reviews         • 2-column reviews         • 3-column reviews ║
+║  • Full-width buttons       • 2-column footer          • 4-column footer  ║
+║                                                                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                         INTERACTIVE FEATURES                               ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  🔄 Hero Carousel                                                          ║
+║     • Auto-rotate every 5 seconds                                         ║
+║     • Manual arrows (← →)                                                 ║
+║     • Dot indicators (click to jump)                                      ║
+║     • Keyboard navigation (arrow keys)                                    ║
+║     • Pause on hover                                                      ║
+║                                                                            ║
+║  📜 Scroll Animations                                                      ║
+║     • Fade in from below                                                  ║
+║     • Slide in from left/right                                            ║
+║     • Triggered via Intersection Observer                                 ║
+║                                                                            ║
+║  🖱️ Hover Effects                                                          ║
+║     • Buttons: Lift + color change                                        ║
+║     • Cards: Lift + shadow increase                                       ║
+║     • Images: Scale + overlay                                             ║
+║     • Links: Underline animation                                          ║
+║                                                                            ║
+║  📱 Mobile Navigation                                                      ║
+║     • Hamburger icon animation                                            ║
+║     • Slide-in menu                                                       ║
+║     • Auto-close on link click                                            ║
+║                                                                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                             COLOR SCHEME                                   ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  🎨 Primary Colors:                                                        ║
+║     ▓▓▓▓ #FAF8F5  Cream/Off-white (Base)                                  ║
+║     ████ #E84855  Strawberry Red (Accent)                                 ║
+║     ████ #4A90E2  Blueberry Blue (Accent)                                 ║
+║     ████ #D4AF37  Gold (Stars/Highlights)                                 ║
+║                                                                            ║
+║  📝 Text Colors:                                                           ║
+║     ████ #2C2C2C  Charcoal (Primary Text)                                 ║
+║     ▓▓▓▓ #6B6B6B  Gray (Secondary Text)                                   ║
+║                                                                            ║
+║  🌈 Gradients:                                                             ║
+║     Cream → Pink → Red (Hero Background)                                  ║
+║     Cream → Light Blue → Blue (About Section)                             ║
+║     White → Cream (Cards)                                                 ║
+║                                                                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                           FILE STRUCTURE                                   ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  dolce-website/                                                            ║
+║  ├── 📄 index.html          (427 lines - Website structure)               ║
+║  ├── 🎨 styles.css          (1122 lines - Complete styling)               ║
+║  ├── ⚡ script.js           (543 lines - Interactive features)            ║
+║  ├── 📖 README.md           (Comprehensive documentation)                 ║
+║  ├── 🚀 QUICK_START.md      (Beginner-friendly guide)                     ║
+║  ├── 🌐 DEPLOYMENT.md       (Hosting instructions)                        ║
+║  ├── 📊 PROJECT_SUMMARY.md  (Complete overview)                           ║
+║  ├── 🗺️ SITE_MAP.txt        (This file - Visual layout)                   ║
+║  └── 📁 images/             (For your custom photos)                      ║
+║                                                                            ║
+║  Total: 2,092 lines of code | ~96KB total size                            ║
+║                                                                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                         QUICK REFERENCE                                    ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  🎯 To View:        Double-click index.html                                ║
+║  🎨 Change Colors:  Edit :root in styles.css                               ║
+║  📝 Edit Content:   Modify text in index.html                              ║
+║  🖼️ Add Images:     Place in images/ folder                                ║
+║  ⏱️ Carousel Speed:  Change SLIDE_INTERVAL in script.js                    ║
+║  🌐 Deploy Free:    GitHub Pages, Netlify, Vercel                         ║
+║                                                                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+                           ✨ ENJOY YOUR WEBSITE! ✨
+                              Made with ❤️ & 🍦

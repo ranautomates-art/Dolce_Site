@@ -1,0 +1,71 @@
+<!--
+    COPY THIS INTO YOUR index.html TO REPLACE THE CURRENT HERO SECTION
+
+    1. Add this CSS link in the <head> section:
+       <link rel="stylesheet" href="hero-topo.css">
+
+    2. Replace your current hero section (id="home") with this code:
+
+    3. Add this script before </body>:
+       <script src="hero-topo.js"></script>
+-->
+
+<!-- START: 3D Topographical Hero Section -->
+<section class="hero section" id="home">
+    <!-- SVG Filter for Grain Texture -->
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter id="grain">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" />
+            <feColorMatrix type="saturate" values="0" />
+        </filter>
+    </svg>
+
+    <!-- Grain Overlay -->
+    <div class="halide-grain"></div>
+
+    <!-- Interface Grid Overlay -->
+    <div class="interface-grid">
+        <!-- Top Bar -->
+        <div class="brand-name">DOLCE</div>
+        <div class="meta-info">
+            <div>SANDY HOOK, NJ</div>
+            <div>ARTISAN CRAFTED</div>
+        </div>
+
+        <!-- Hero Title -->
+        <h1 class="hero-title">
+            HANDCRAFTED<br />
+            GELATO
+        </h1>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-grid">
+            <div class="archive-info">
+                <p>[ EST. 2009 ]</p>
+                <p>ITALIAN TRADITION & PREMIUM INGREDIENTS</p>
+            </div>
+            <a href="sweets.html" class="cta-button">EXPLORE FLAVORS</a>
+        </div>
+    </div>
+
+    <!-- 3D Viewport -->
+    <div class="viewport">
+        <div class="canvas-3d" id="canvas-3d">
+            <!-- Layer 1: Your chocolate milkshake image -->
+            <div class="layer layer-1" id="layer-1"></div>
+
+            <!-- Layer 2: Your ice cream cone image -->
+            <div class="layer layer-2" id="layer-2"></div>
+
+            <!-- Layer 3: Blend layer -->
+            <div class="layer layer-3" id="layer-3"></div>
+
+            <!-- Topographical Contour Lines -->
+            <div class="contours"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Hint Animation -->
+    <div class="scroll-hint"></div>
+</section>
+<!-- END: 3D Topographical Hero Section -->

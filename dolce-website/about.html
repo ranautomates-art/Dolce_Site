@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Dolce - A family-owned gelato shop in Sandy Hook, CT with 15+ years of crafting artisanal frozen desserts.">
+    <title>About Us - Dolce Gelato | Our Story</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="sweets.html" class="nav__link">Menu</a>
+
+            <a href="index.html" class="nav__logo">
+                <img src="/js/Dolce_Logo2.avif" alt="Dolce Gelato" class="nav__logo-img">
+            </a>
+
+            <a href="about.html" class="nav__link">About Us</a>
+            <a href="location.html" class="nav__link">Location</a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero__overlay"></div>
+            <div class="about-hero__image">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&h=800&fit=crop&q=90" alt="Dolce Gelato Shop" class="about-hero__img">
+            </div>
+            <div class="about-hero__content container">
+                <h1 class="about-hero__title">Our Story: Handcrafted with Love in Sandy Hook</h1>
+                <p class="about-hero__subtitle">A family tradition of excellence since 2009</p>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission section">
+            <div class="container">
+                <div class="mission__grid">
+                    <!-- Passion Project Quote -->
+                    <div class="mission__quote-container">
+                        <blockquote class="mission__quote">
+                            <svg class="mission__quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 7C9.67392 7 8.40215 7.52678 7.46447 8.46447C6.52678 9.40215 6 10.6739 6 12C6 13.3261 6.52678 14.5979 7.46447 15.5355C8.40215 16.4732 9.67392 17 11 17V20C7 20 4 17 4 12C4 7 7 4 11 4V7Z" fill="currentColor"/>
+                                <path d="M20 7C18.6739 7 17.4021 7.52678 16.4645 8.46447C15.5268 9.40215 15 10.6739 15 12C15 13.3261 15.5268 14.5979 16.4645 15.5355C17.4021 16.4732 18.6739 17 20 17V20C16 20 13 17 13 12C13 7 16 4 20 4V7Z" fill="currentColor"/>
+                            </svg>
+                            <p class="mission__quote-text">
+                                Dolce is a family-owned and operated gelato shop nestled in the heart of Sandy Hook.
+                                What started as a passion project has blossomed into a beloved local destination where
+                                tradition meets innovation.
+                            </p>
+                            <p class="mission__quote-text">
+                                Our commitment to quality means we source the finest ingredients and craft each batch
+                                with care. We believe that great gelato brings people together, creating sweet memories
+                                that last a lifetime.
+                            </p>
+                        </blockquote>
+                    </div>
+
+                    <!-- Our Values -->
+                    <div class="mission__values">
+                        <h2 class="mission__values-title">Our Values</h2>
+                        <div class="mission__values-list">
+                            <div class="value-card">
+                                <div class="value-card__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <h3 class="value-card__title">Quality</h3>
+                                <p class="value-card__description">We use only the finest, premium ingredients sourced from trusted suppliers to create exceptional flavors.</p>
+                            </div>
+
+                            <div class="value-card">
+                                <div class="value-card__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3 class="value-card__title">Community</h3>
+                                <p class="value-card__description">As a family-owned business, we're proud to be a gathering place for families and friends in Sandy Hook.</p>
+                            </div>
+
+                            <div class="value-card">
+                                <div class="value-card__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3 class="value-card__title">Tradition</h3>
+                                <p class="value-card__description">Every scoop honors authentic Italian gelato-making techniques passed down through generations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline section">
+            <div class="container">
+                <h2 class="timeline__title">Our Journey</h2>
+                <p class="timeline__subtitle">15+ years of sweet moments and memories</p>
+
+                <div class="timeline__container">
+                    <div class="timeline__item timeline__item--left">
+                        <div class="timeline__content">
+                            <div class="timeline__year">2009</div>
+                            <h3 class="timeline__event-title">The Beginning</h3>
+                            <p class="timeline__description">
+                                Dolce opened its doors in Sandy Hook with a dream: to bring authentic Italian gelato to our community.
+                                Starting with just 12 family recipes, we quickly became a local favorite.
+                            </p>
+                        </div>
+                        <div class="timeline__marker"></div>
+                    </div>
+
+                    <div class="timeline__item timeline__item--right">
+                        <div class="timeline__content">
+                            <div class="timeline__year">2014</div>
+                            <h3 class="timeline__event-title">Expanding Horizons</h3>
+                            <p class="timeline__description">
+                                After 5 years of perfecting our craft, we expanded our flavor menu to over 30 unique varieties,
+                                including seasonal specialties and customer favorites like Bacio and Stracciatella.
+                            </p>
+                        </div>
+                        <div class="timeline__marker"></div>
+                    </div>
+
+                    <div class="timeline__item timeline__item--left">
+                        <div class="timeline__content">
+                            <div class="timeline__year">2019</div>
+                            <h3 class="timeline__event-title">A Decade of Excellence</h3>
+                            <p class="timeline__description">
+                                Celebrating 10 years in business, we were honored to be named "Best Gelato Shop"
+                                by the Sandy Hook community. We also launched our signature Italian ice line.
+                            </p>
+                        </div>
+                        <div class="timeline__marker"></div>
+                    </div>
+
+                    <div class="timeline__item timeline__item--right">
+                        <div class="timeline__content">
+                            <div class="timeline__year">2024</div>
+                            <h3 class="timeline__event-title">50+ Unique Flavors</h3>
+                            <p class="timeline__description">
+                                Today, Dolce proudly offers over 50 handcrafted flavors of gelato, Italian ice, and milkshakes.
+                                Every recipe still honors our family traditions while embracing creative innovation.
+                            </p>
+                        </div>
+                        <div class="timeline__marker"></div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="timeline__stats">
+                    <div class="stat-card">
+                        <span class="stat-card__number">15+</span>
+                        <span class="stat-card__label">Years of Excellence</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card__number">50+</span>
+                        <span class="stat-card__label">Unique Flavors</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card__number">100%</span>
+                        <span class="stat-card__label">Family Recipes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Owners Section -->
+        <section class="owners section">
+            <div class="container">
+                <h2 class="owners__title">Meet the Owners</h2>
+                <p class="owners__subtitle">The heart and soul behind Dolce</p>
+
+                <div class="owners__content">
+                    <div class="owners__image">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=900&fit=crop&q=90" alt="The Dolce Family" class="owners__img">
+                        <div class="owners__badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57831 8.50903 2.99871 7.05 2.99871C5.59096 2.99871 4.19169 3.57831 3.16 4.61C2.1283 5.64169 1.54871 7.04097 1.54871 8.5C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7564 11.2728 22.0329 10.6054C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.0621 22.0329 6.39464C21.7564 5.72718 21.351 5.12075 20.84 4.61V4.61Z" fill="currentColor"/>
+                            </svg>
+                            <span>Family Owned</span>
+                        </div>
+                    </div>
+
+                    <div class="owners__bio">
+                        <div class="owners__bio-content">
+                            <h3 class="owners__bio-title">A Family's Passion for Artisanal Excellence</h3>
+                            <p class="owners__bio-text">
+                                The story of Dolce begins with a family's deep love for authentic Italian desserts and a
+                                dream to share that passion with Sandy Hook. Growing up in an Italian household where food
+                                was the centerpiece of every gathering, our founders learned the secrets of traditional
+                                gelato-making from their grandmother.
+                            </p>
+                            <p class="owners__bio-text">
+                                In 2009, they took a leap of faith and opened Dolce, transforming family recipes into a
+                                thriving business. Every day, you'll find them in the shop—scooping gelato, perfecting
+                                new flavors, and chatting with customers who have become like family.
+                            </p>
+                            <p class="owners__bio-text">
+                                "We don't just serve gelato," they say. "We create moments of joy. Every scoop is made
+                                with the same love and care we'd give to our own family—because our customers are family."
+                            </p>
+
+                            <div class="owners__signature">
+                                <div class="owners__signature-line"></div>
+                                <p class="owners__signature-text">With love from the Dolce family</p>
+                            </div>
+                        </div>
+
+                        <div class="owners__highlights">
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Dedicated to authentic Italian techniques</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Committed to quality and community</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Handcrafting every batch with care</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Experience Dolce?</h2>
+                    <p class="cta__description">
+                        Visit us today and taste the difference that passion, quality, and tradition make.
+                        We can't wait to serve you!
+                    </p>
+                    <a href="location.html" class="btn btn--primary btn--large">Visit Us Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section footer__section--logo">
+                    <img src="/js/Dolce_Logo.jpg" alt="Dolce Gelato" class="footer__logo">
+                    <p class="footer__description">
+                        Handcrafted gelato, made with love in Sandy Hook, CT.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Hours</h4>
+                    <ul class="footer__list">
+                        <li>Monday: Closed</li>
+                        <li>Tuesday: 2pm - 9pm</li>
+                        <li>Wednesday: 2pm - 9pm</li>
+                        <li>Thursday: 2pm - 9pm</li>
+                        <li>Friday: 12pm - 9pm</li>
+                        <li>Saturday: 12pm - 9pm</li>
+                        <li>Sunday: 1pm - 8pm</li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Location</h4>
+                    <address class="footer__address">
+                        117 Church Hill Rd<br>
+                        Sandy Hook, CT 06482<br>
+                        <a href="tel:+12033049198">(203) 304-9198</a>
+                    </address>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Connect</h4>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/dolcesandyhook" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/dolcect" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dolce Gelato. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
