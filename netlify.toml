@@ -1,13 +1,33 @@
+# Netlify Configuration for Dolce Website
+# ========================================
+
 [build]
+  # No build command needed - this is a static HTML site
+  command = ""
+
+  # Publish from the root directory (where index.html is located)
   publish = "."
-  command = "echo 'No build required - static site'"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
-  conditions = {Role = ["*"]}
+# Ensure all file types are served correctly
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
 
-[build.environment]
-  NODE_VERSION = "18"
+# Serve image files with proper caching
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.avif"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
