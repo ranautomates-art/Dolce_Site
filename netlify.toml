@@ -5,8 +5,8 @@
   # No build command needed - this is a static HTML site
   command = ""
 
-  # Publish from the root directory (where index.html is located)
-  publish = "."
+  # Publish from the dolce-website directory (where index.html and all assets are)
+  publish = "dolce-website"
 
 # Ensure all file types are served correctly
 [[headers]]
