@@ -316,7 +316,7 @@ function initEventListeners() {
     // Handle window resize
     window.addEventListener('resize', () => {
         if (window.innerWidth > 640) {
-            navMenu.forEach(menu => menu.classList.remove('active'));
+            nav?.classList.remove('mobile-active');
         }
     });
 }
