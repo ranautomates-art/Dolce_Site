@@ -1108,6 +1108,10 @@ button {
     .nav__link {
         display: inline-block !important;
     }
+
+    .nav__mobile-menu {
+        display: none !important;
+    }
 }
 
 /* Tablet (max-width: 1024px) */
@@ -1168,26 +1172,20 @@ button {
 
     /* Navigation Mobile */
     .nav {
-        flex-direction: column !important;
+        flex-direction: row !important;
         gap: 0 !important;
         position: relative;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
     }
 
     .nav__link {
-        display: none;
-        width: 100%;
-        padding: var(--spacing-md) 0 !important;
-        text-align: center;
-        font-size: 1.125rem;
-    }
-
-    .nav.mobile-active .nav__link {
-        display: block;
+        display: none !important;
     }
 
     .nav__logo {
         position: relative !important;
-        order: -1;
+        order: 0 !important;
         margin: 0 !important;
     }
 
@@ -1204,10 +1202,72 @@ button {
         z-index: 101;
     }
 
+    /* Mobile dropdown panel */
+    .nav__mobile-menu {
+        display: none;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background: var(--color-primary);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        z-index: 99;
+        flex-direction: column;
+        border-top: 2px solid var(--color-accent-red);
+        animation: mobileMenuSlideDown 0.22s ease-out;
+    }
+
+    .nav__mobile-menu.open {
+        display: flex;
+    }
+
+    .nav__mobile-link {
+        display: block;
+        padding: 1.25rem 2rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: var(--color-text-dark);
+        text-align: center;
+        letter-spacing: 0.5px;
+        font-family: 'Inter', sans-serif;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+        transition: background 0.18s ease, color 0.18s ease;
+    }
+
+    .nav__mobile-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav__mobile-link:hover,
+    .nav__mobile-link:active {
+        background: var(--color-parchment);
+        color: var(--color-accent-red);
+    }
+
+    @keyframes mobileMenuSlideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-6px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     /* Hero Mobile */
     .hero {
-        min-height: 600px;
+        height: 100vw;
+        min-height: unset;
+        background: var(--color-primary);
     }
+
+    .hero__banner-img {
+        object-fit: contain;
+        object-position: center;
+        background: var(--color-primary);
+    }
+
 
     .hero__visual {
         height: 400px;
